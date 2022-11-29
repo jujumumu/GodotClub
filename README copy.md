@@ -1,2 +1,0 @@
-# GodotClub
- AVHS gamedev club

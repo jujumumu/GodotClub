@@ -8,7 +8,7 @@ func _ready():
 	pass # Replace with function body.
 
 func set_direction(direction):
-	rotation_degrees = rad2deg(-direction.angle_to(Vector2(0,-1)))
+	rotation_degrees = rad2deg( -direction.angle_to(Vector2(0,-1)))
 	velocity = direction * speed
 
 func _process(delta):

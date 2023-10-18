@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/chestLand.mp3-9a2d1beb0b356482e384c8526ce59de3.mp3str"
+
+[deps]
+
+source_file="res://audio/Sound Effects/chestLand.mp3"
+dest_files=[ "res://.import/chestLand.mp3-9a2d1beb0b356482e384c8526ce59de3.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

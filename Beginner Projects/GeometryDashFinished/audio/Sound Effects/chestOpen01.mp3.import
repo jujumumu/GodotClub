@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/chestOpen01.mp3-9f0db54858fb9d0a05314ff5bf4e9ec0.mp3str"
+
+[deps]
+
+source_file="res://audio/Sound Effects/chestOpen01.mp3"
+dest_files=[ "res://.import/chestOpen01.mp3-9f0db54858fb9d0a05314ff5bf4e9ec0.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

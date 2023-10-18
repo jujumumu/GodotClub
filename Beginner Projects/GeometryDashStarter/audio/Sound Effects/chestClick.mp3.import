@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/chestClick.mp3-e463314dfecc41d9e196ed9e3a98825f.mp3str"
+
+[deps]
+
+source_file="res://audio/Sound Effects/chestClick.mp3"
+dest_files=[ "res://.import/chestClick.mp3-e463314dfecc41d9e196ed9e3a98825f.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

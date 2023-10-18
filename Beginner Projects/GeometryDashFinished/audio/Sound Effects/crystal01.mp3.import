@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/crystal01.mp3-934e4aae317d2bcc5b2190237f3eb1be.mp3str"
+
+[deps]
+
+source_file="res://audio/Sound Effects/crystal01.mp3"
+dest_files=[ "res://.import/crystal01.mp3-934e4aae317d2bcc5b2190237f3eb1be.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

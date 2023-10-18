@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/gold02.mp3-38934d064316f5d03603b37fa79eba25.mp3str"
+
+[deps]
+
+source_file="res://audio/Sound Effects/gold02.mp3"
+dest_files=[ "res://.import/gold02.mp3-38934d064316f5d03603b37fa79eba25.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

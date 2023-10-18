@@ -107,9 +107,6 @@ margin_right = 201.0
 margin_bottom = 574.0
 custom_fonts/font = SubResource( 5 )
 text = "Bullet Mode: Off"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="music" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 4 )

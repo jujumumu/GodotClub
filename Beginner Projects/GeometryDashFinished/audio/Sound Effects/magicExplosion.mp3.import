@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/magicExplosion.mp3-4f73f2850b2b769e9abc767844ad98e2.mp3str"
+
+[deps]
+
+source_file="res://audio/Sound Effects/magicExplosion.mp3"
+dest_files=[ "res://.import/magicExplosion.mp3-4f73f2850b2b769e9abc767844ad98e2.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

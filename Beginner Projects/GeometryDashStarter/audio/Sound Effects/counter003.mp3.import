@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/counter003.mp3-85521aceb1b0ed8a1b81e423e53e378f.mp3str"
+
+[deps]
+
+source_file="res://audio/Sound Effects/counter003.mp3"
+dest_files=[ "res://.import/counter003.mp3-85521aceb1b0ed8a1b81e423e53e378f.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

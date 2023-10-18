@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/1-05. Dry Out.mp3-336f8707b40631b66b1d71189e620dec.mp3str"
+
+[deps]
+
+source_file="res://audio/1-05. Dry Out.mp3"
+dest_files=[ "res://.import/1-05. Dry Out.mp3-336f8707b40631b66b1d71189e620dec.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/1-14. Electroman Adventures.mp3-392a6b1ec06477c2ec3de55fdda54191.mp3str"
+
+[deps]
+
+source_file="res://audio/1-14. Electroman Adventures.mp3"
+dest_files=[ "res://.import/1-14. Electroman Adventures.mp3-392a6b1ec06477c2ec3de55fdda54191.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

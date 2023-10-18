@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/reward01.mp3-49e22aa91ee2d6ccf86be13354a11be9.mp3str"
+
+[deps]
+
+source_file="res://audio/Sound Effects/reward01.mp3"
+dest_files=[ "res://.import/reward01.mp3-49e22aa91ee2d6ccf86be13354a11be9.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

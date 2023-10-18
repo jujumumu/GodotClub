@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/1-06. Base After Base.mp3-0339814ce0637fb23fdeafdf875195ca.mp3str"
+
+[deps]
+
+source_file="res://audio/1-06. Base After Base.mp3"
+dest_files=[ "res://.import/1-06. Base After Base.mp3-0339814ce0637fb23fdeafdf875195ca.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/1-20. Geometrical Dominator.mp3-0ca62de31e9f9022961a4ab4b6b7ef8f.mp3str"
+
+[deps]
+
+source_file="res://audio/1-20. Geometrical Dominator.mp3"
+dest_files=[ "res://.import/1-20. Geometrical Dominator.mp3-0ca62de31e9f9022961a4ab4b6b7ef8f.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

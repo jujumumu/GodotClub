@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/1-23. Stay Inside Me.mp3-ad14b4960d65c66a98a1766ad1793b81.mp3str"
+
+[deps]
+
+source_file="res://audio/1-23. Stay Inside Me.mp3"
+dest_files=[ "res://.import/1-23. Stay Inside Me.mp3-ad14b4960d65c66a98a1766ad1793b81.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

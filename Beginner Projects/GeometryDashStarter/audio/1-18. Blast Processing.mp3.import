@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/1-18. Blast Processing.mp3-13423b13e6b3f00762ecf01bbe3044f9.mp3str"
+
+[deps]
+
+source_file="res://audio/1-18. Blast Processing.mp3"
+dest_files=[ "res://.import/1-18. Blast Processing.mp3-13423b13e6b3f00762ecf01bbe3044f9.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

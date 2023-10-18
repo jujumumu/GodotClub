@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/1-02. Stereo Madness.mp3-e8c1ab8311cf26071d3e346d4357ed44.mp3str"
+
+[deps]
+
+source_file="res://audio/1-02. Stereo Madness.mp3"
+dest_files=[ "res://.import/1-02. Stereo Madness.mp3-e8c1ab8311cf26071d3e346d4357ed44.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

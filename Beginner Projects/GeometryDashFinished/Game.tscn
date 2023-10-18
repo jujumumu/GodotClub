@@ -1,0 +1,166 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Game.gd" type="Script" id=2]
+[ext_resource path="res://assets/fonts/Xolonium-Regular.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 100000, 30 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 49.75, 20 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 100
+font_data = ExtResource( 3 )
+
+[node name="Game" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 47, 502 )
+
+[node name="Level" type="Node2D" parent="."]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Level"]
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/StaticBody2D"]
+position = Vector2( -8, 570 )
+shape = SubResource( 1 )
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="Level"]
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/StaticBody2D3"]
+position = Vector2( 946, 517 )
+shape = SubResource( 3 )
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="Level"]
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/StaticBody2D4"]
+position = Vector2( 1194, 414 )
+shape = SubResource( 3 )
+
+[node name="StaticBody2D5" type="StaticBody2D" parent="Level"]
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/StaticBody2D5"]
+position = Vector2( 1451, 341 )
+shape = SubResource( 3 )
+
+[node name="StaticBody2D6" type="StaticBody2D" parent="Level"]
+position = Vector2( 757, -212 )
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/StaticBody2D6"]
+position = Vector2( 927, 465 )
+shape = SubResource( 3 )
+
+[node name="StaticBody2D7" type="StaticBody2D" parent="Level"]
+position = Vector2( 757, -212 )
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/StaticBody2D7"]
+position = Vector2( 1194, 414 )
+shape = SubResource( 3 )
+
+[node name="StaticBody2D8" type="StaticBody2D" parent="Level"]
+position = Vector2( 757, -212 )
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/StaticBody2D8"]
+position = Vector2( 1451, 341 )
+shape = SubResource( 3 )
+
+[node name="Triangle2" type="StaticBody2D" parent="Level"]
+collision_layer = 0
+collision_mask = 4
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Level/Triangle2"]
+position = Vector2( 1177, 391 )
+polygon = PoolVector2Array( 24, -38, 43, 0, 0, 0 )
+
+[node name="Triangle5" type="StaticBody2D" parent="Level"]
+collision_layer = 0
+collision_mask = 4
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Level/Triangle5"]
+position = Vector2( 1466, 322 )
+polygon = PoolVector2Array( 24, -38, 43, 0, 0, 0 )
+
+[node name="Triangle6" type="StaticBody2D" parent="Level"]
+collision_layer = 0
+collision_mask = 4
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Level/Triangle6"]
+position = Vector2( 3277, 531 )
+polygon = PoolVector2Array( 24, -38, 43, 0, 0, 0 )
+
+[node name="Triangle7" type="StaticBody2D" parent="Level"]
+collision_layer = 0
+collision_mask = 4
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Level/Triangle7"]
+position = Vector2( 3345, 534 )
+polygon = PoolVector2Array( 24, -38, 43, 0, 0, 0 )
+
+[node name="Triangle8" type="StaticBody2D" parent="Level"]
+collision_layer = 0
+collision_mask = 4
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Level/Triangle8"]
+position = Vector2( 3418, 528 )
+polygon = PoolVector2Array( 24, -38, 43, 0, 0, 0 )
+
+[node name="Triangle9" type="StaticBody2D" parent="Level"]
+collision_layer = 0
+collision_mask = 4
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Level/Triangle9"]
+position = Vector2( 3824, 526 )
+polygon = PoolVector2Array( 24, -38, 43, 0, 0, 0 )
+
+[node name="Triangle" type="StaticBody2D" parent="Level"]
+collision_layer = 0
+collision_mask = 4
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Level/Triangle"]
+position = Vector2( 632, 537 )
+polygon = PoolVector2Array( 24, -38, 43, 0, 0, 0 )
+
+[node name="Triangle3" type="StaticBody2D" parent="Level"]
+collision_layer = 0
+collision_mask = 4
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Level/Triangle3"]
+position = Vector2( 679, 536 )
+polygon = PoolVector2Array( 24, -38, 43, 0, 0, 0 )
+
+[node name="Triangle4" type="StaticBody2D" parent="Level"]
+collision_layer = 0
+collision_mask = 4
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Level/Triangle4"]
+position = Vector2( 725, 535 )
+polygon = PoolVector2Array( 24, -38, 43, 0, 0, 0 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+current = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="YouDied" type="Label" parent="CanvasLayer"]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -254.0
+margin_top = -60.0
+margin_right = 254.0
+margin_bottom = 60.0
+custom_fonts/font = SubResource( 4 )
+text = "You Died!"

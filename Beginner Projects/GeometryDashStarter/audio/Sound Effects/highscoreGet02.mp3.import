@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/highscoreGet02.mp3-210dc287d581734861aa56f111aa789c.mp3str"
+
+[deps]
+
+source_file="res://audio/Sound Effects/highscoreGet02.mp3"
+dest_files=[ "res://.import/highscoreGet02.mp3-210dc287d581734861aa56f111aa789c.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

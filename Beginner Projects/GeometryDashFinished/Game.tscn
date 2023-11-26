@@ -1,150 +1,248 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Game.gd" type="Script" id=2]
 [ext_resource path="res://assets/fonts/Xolonium-Regular.ttf" type="DynamicFontData" id=3]
-
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 100000, 30 )
-
-[sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 49.75, 20 )
+[ext_resource path="res://assets/RegularPlatform01.png" type="Texture" id=4]
+[ext_resource path="res://assets/RegularBlock01.png" type="Texture" id=5]
+[ext_resource path="res://assets/WavyPlatform04.png" type="Texture" id=6]
+[ext_resource path="res://assets/RegularSpike01.png" type="Texture" id=7]
+[ext_resource path="res://assets/RegularSpike02.png" type="Texture" id=8]
+[ext_resource path="res://assets/ThornPit01.png" type="Texture" id=9]
+[ext_resource path="res://assets/Geometry Dash - Ground/Grounds/groundSquare_01_001-hd.png" type="Texture" id=10]
 
 [sub_resource type="DynamicFont" id=4]
 size = 100
 font_data = ExtResource( 3 )
 
+[sub_resource type="ConvexPolygonShape2D" id=6]
+points = PoolVector2Array( 0, 0, 122, 0, 122, 61, 0, 61 )
+
+[sub_resource type="ConvexPolygonShape2D" id=7]
+points = PoolVector2Array( 0, 0, 122, 0, 122, 28, 0, 28 )
+
+[sub_resource type="ConvexPolygonShape2D" id=8]
+points = PoolVector2Array( 0, 0, 121.789, 0, 122, 6.79658, 0.0133438, 6.95808 )
+
+[sub_resource type="TileSet" id=5]
+0/name = "RegularBlock01.png 0"
+0/texture = ExtResource( 5 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 122, 122 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 6 )
+0/shape_one_way = false
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 6 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+0/z_index = 0
+1/name = "RegularPlatform01.png 1"
+1/texture = ExtResource( 4 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 122, 56 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape = SubResource( 7 )
+1/shape_one_way = false
+1/shape_one_way_margin = 1.0
+1/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 7 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+1/z_index = 0
+2/name = "WavyPlatform04.png 2"
+2/texture = ExtResource( 6 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 0, 0, 122, 63 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape = SubResource( 8 )
+2/shape_one_way = false
+2/shape_one_way_margin = 1.0
+2/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 8 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+2/z_index = 0
+
+[sub_resource type="ConvexPolygonShape2D" id=9]
+points = PoolVector2Array( 61, 0, 122, 122, 0, 122 )
+
+[sub_resource type="ConvexPolygonShape2D" id=11]
+points = PoolVector2Array( 0.046936, 103.731, 0.448822, 46.6647, 10.4958, 29.384, 17.7296, 39.0291, 33.4028, 0.0469513, 47.8704, 35.814, 57.1136, 26.169, 63.9455, 37.0197, 73.5905, 30.1878, 79.2168, 33.0009, 88.46, 9.692, 100.918, 39.431, 107.348, 22.1502, 120.208, 45.0572, 121.414, 104.535 )
+
+[sub_resource type="ConvexPolygonShape2D" id=12]
+points = PoolVector2Array( 61, 0, 122, 56, 0, 56 )
+
+[sub_resource type="ConvexPolygonShape2D" id=13]
+points = PoolVector2Array( 0, 24.8852, 60.158, 58.6076, 122, 122, 0, 122 )
+
+[sub_resource type="ConvexPolygonShape2D" id=14]
+points = PoolVector2Array( 0, 13.8382, 60.9332, 32.2499, 122, 56, 0, 56 )
+
+[sub_resource type="TileSet" id=10]
+0/name = "RegularSpike01.png 0"
+0/texture = ExtResource( 7 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 122, 122 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 9 )
+0/shape_one_way = false
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 9 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+0/z_index = 0
+1/name = "ThornPit01.png 1"
+1/texture = ExtResource( 9 )
+1/tex_offset = Vector2( 0, 16 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 122, 106 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape = SubResource( 11 )
+1/shape_one_way = false
+1/shape_one_way_margin = 1.0
+1/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 11 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+1/z_index = 0
+2/name = "RegularSpike02.png 2"
+2/texture = ExtResource( 8 )
+2/tex_offset = Vector2( 0, 66 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 0, 0, 122, 56 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape = SubResource( 12 )
+2/shape_one_way = false
+2/shape_one_way_margin = 1.0
+2/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 12 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+2/z_index = 0
+3/name = "RegularBlock01.png 3"
+3/texture = ExtResource( 5 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 0, 0, 122, 122 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape = SubResource( 13 )
+3/shape_one_way = false
+3/shape_one_way_margin = 1.0
+3/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 13 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+3/z_index = 0
+4/name = "RegularPlatform01.png 4"
+4/texture = ExtResource( 4 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 0, 0, 122, 56 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape = SubResource( 14 )
+4/shape_one_way = false
+4/shape_one_way_margin = 1.0
+4/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 14 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+4/z_index = 0
+
+[sub_resource type="ConvexPolygonShape2D" id=15]
+points = PoolVector2Array( 0, 0, 256, 0, 256, 256, 0, 256 )
+
+[sub_resource type="TileSet" id=16]
+0/name = "groundSquare_01_001-hd.png 0"
+0/texture = ExtResource( 10 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 256, 256 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 15 )
+0/shape_one_way = false
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 15 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+0/z_index = 0
+
 [node name="Game" type="Node2D"]
 script = ExtResource( 2 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 47, 502 )
-
-[node name="Level" type="Node2D" parent="."]
-
-[node name="StaticBody2D" type="StaticBody2D" parent="Level"]
-collision_mask = 3
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/StaticBody2D"]
-position = Vector2( -8, 570 )
-shape = SubResource( 1 )
-
-[node name="StaticBody2D3" type="StaticBody2D" parent="Level"]
-collision_mask = 3
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/StaticBody2D3"]
-position = Vector2( 946, 517 )
-shape = SubResource( 3 )
-
-[node name="StaticBody2D4" type="StaticBody2D" parent="Level"]
-collision_mask = 3
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/StaticBody2D4"]
-position = Vector2( 1194, 414 )
-shape = SubResource( 3 )
-
-[node name="StaticBody2D5" type="StaticBody2D" parent="Level"]
-collision_mask = 3
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/StaticBody2D5"]
-position = Vector2( 1451, 341 )
-shape = SubResource( 3 )
-
-[node name="StaticBody2D6" type="StaticBody2D" parent="Level"]
-position = Vector2( 757, -212 )
-collision_mask = 3
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/StaticBody2D6"]
-position = Vector2( 927, 465 )
-shape = SubResource( 3 )
-
-[node name="StaticBody2D7" type="StaticBody2D" parent="Level"]
-position = Vector2( 757, -212 )
-collision_mask = 3
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/StaticBody2D7"]
-position = Vector2( 1194, 414 )
-shape = SubResource( 3 )
-
-[node name="StaticBody2D8" type="StaticBody2D" parent="Level"]
-position = Vector2( 757, -212 )
-collision_mask = 3
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/StaticBody2D8"]
-position = Vector2( 1451, 341 )
-shape = SubResource( 3 )
-
-[node name="Triangle2" type="StaticBody2D" parent="Level"]
-collision_layer = 0
-collision_mask = 4
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Level/Triangle2"]
-position = Vector2( 1177, 391 )
-polygon = PoolVector2Array( 24, -38, 43, 0, 0, 0 )
-
-[node name="Triangle5" type="StaticBody2D" parent="Level"]
-collision_layer = 0
-collision_mask = 4
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Level/Triangle5"]
-position = Vector2( 1466, 322 )
-polygon = PoolVector2Array( 24, -38, 43, 0, 0, 0 )
-
-[node name="Triangle6" type="StaticBody2D" parent="Level"]
-collision_layer = 0
-collision_mask = 4
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Level/Triangle6"]
-position = Vector2( 3277, 531 )
-polygon = PoolVector2Array( 24, -38, 43, 0, 0, 0 )
-
-[node name="Triangle7" type="StaticBody2D" parent="Level"]
-collision_layer = 0
-collision_mask = 4
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Level/Triangle7"]
-position = Vector2( 3345, 534 )
-polygon = PoolVector2Array( 24, -38, 43, 0, 0, 0 )
-
-[node name="Triangle8" type="StaticBody2D" parent="Level"]
-collision_layer = 0
-collision_mask = 4
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Level/Triangle8"]
-position = Vector2( 3418, 528 )
-polygon = PoolVector2Array( 24, -38, 43, 0, 0, 0 )
-
-[node name="Triangle9" type="StaticBody2D" parent="Level"]
-collision_layer = 0
-collision_mask = 4
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Level/Triangle9"]
-position = Vector2( 3824, 526 )
-polygon = PoolVector2Array( 24, -38, 43, 0, 0, 0 )
-
-[node name="Triangle" type="StaticBody2D" parent="Level"]
-collision_layer = 0
-collision_mask = 4
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Level/Triangle"]
-position = Vector2( 632, 537 )
-polygon = PoolVector2Array( 24, -38, 43, 0, 0, 0 )
-
-[node name="Triangle3" type="StaticBody2D" parent="Level"]
-collision_layer = 0
-collision_mask = 4
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Level/Triangle3"]
-position = Vector2( 679, 536 )
-polygon = PoolVector2Array( 24, -38, 43, 0, 0, 0 )
-
-[node name="Triangle4" type="StaticBody2D" parent="Level"]
-collision_layer = 0
-collision_mask = 4
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Level/Triangle4"]
-position = Vector2( 725, 535 )
-polygon = PoolVector2Array( 24, -38, 43, 0, 0, 0 )
+position = Vector2( 84, 501 )
+gravity_scale = 1.0
 
 [node name="Camera2D" type="Camera2D" parent="."]
 anchor_mode = 0
@@ -164,3 +262,38 @@ margin_right = 254.0
 margin_bottom = 60.0
 custom_fonts/font = SubResource( 4 )
 text = "You Died!"
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+margin_left = 26.0
+margin_top = 450.0
+margin_right = 66.0
+margin_bottom = 464.0
+
+[node name="TileMap" type="TileMap" parent="."]
+scale = Vector2( 0.492, 0.492 )
+tile_set = SubResource( 5 )
+cell_size = Vector2( 122, 122 )
+collision_mask = 3
+format = 1
+tile_data = PoolIntArray( 131188, 1, 0, 196720, 1, 0, 196808, 1, 0, 196821, 0, 0, 196825, 0, 0, 196826, 0, 0, 196830, 0, 0, 262252, 1, 0, 262269, 1, 0, 262270, 1, 0, 262277, 1, 0, 262278, 1, 0, 262340, 1, 0, 262357, 0, 0, 262361, 0, 0, 262362, 0, 0, 262363, 0, 0, 262365, 0, 0, 262366, 0, 0, 327784, 1, 0, 327821, 1, 0, 327822, 1, 0, 327823, 1, 0, 327824, 1, 0, 327872, 1, 0, 327893, 0, 0, 327894, 0, 0, 327896, 0, 0, 327897, 0, 0, 327899, 0, 0, 327901, 0, 0, 393262, 0, 0, 393316, 1, 0, 393336, 0, 0, 393337, 0, 0, 393338, 0, 0, 393339, 0, 0, 393340, 0, 0, 393341, 0, 0, 393342, 0, 0, 393343, 0, 0, 393344, 0, 0, 393345, 0, 0, 393346, 0, 0, 393347, 0, 0, 393348, 0, 0, 393349, 0, 0, 393350, 0, 0, 393351, 0, 0, 393352, 0, 0, 393353, 0, 0, 393364, 0, 0, 393365, 0, 0, 393366, 0, 0, 393367, 0, 0, 393404, 1, 0, 393414, 0, 0, 393415, 0, 0, 393416, 0, 0, 393417, 0, 0, 393418, 0, 0, 393419, 0, 0, 393420, 0, 0, 393421, 0, 0, 393422, 0, 0, 393423, 0, 0, 393430, 0, 0, 393431, 0, 0, 393432, 0, 0, 393435, 0, 0, 393436, 0, 0, 393437, 0, 0, 458794, 0, 0, 458798, 0, 0, 458836, 0, 0, 458837, 0, 0, 458838, 0, 0, 458839, 0, 0, 458840, 0, 0, 458841, 0, 0, 458842, 0, 0, 458843, 0, 0, 458844, 0, 0, 458845, 0, 0, 458846, 0, 0, 458847, 0, 0, 458848, 0, 0, 458873, 0, 0, 458874, 0, 0, 458875, 0, 0, 458876, 0, 0, 458877, 0, 0, 458878, 0, 0, 458879, 0, 0, 458880, 0, 0, 458881, 0, 0, 458882, 0, 0, 458883, 0, 0, 458884, 0, 0, 458885, 0, 0, 458886, 0, 0, 458887, 0, 0, 458888, 0, 0, 458889, 0, 0, 458890, 0, 0, 458891, 0, 0, 458892, 0, 0, 458893, 0, 0, 458894, 0, 0, 458895, 0, 0, 458896, 0, 0, 458897, 0, 0, 458898, 0, 0, 458899, 0, 0, 458900, 0, 0, 458901, 0, 0, 458902, 0, 0, 458903, 0, 0, 458912, 1, 0, 458913, 1, 0, 458914, 1, 0, 458915, 1, 0, 458936, 1, 0, 458956, 0, 0, 458957, 0, 0, 458958, 0, 0, 458959, 0, 0, 458967, 0, 0, 458968, 0, 0, 458972, 0, 0, 458973, 0, 0, 524326, 0, 0, 524330, 0, 0, 524334, 0, 0, 524350, 0, 0, 524351, 0, 0, 524352, 0, 0, 524353, 0, 0, 524354, 0, 0, 524355, 0, 0, 524356, 0, 0, 524360, 0, 0, 524361, 0, 0, 524362, 0, 0, 524363, 0, 0, 524364, 0, 0, 524365, 0, 0, 524366, 0, 0, 524367, 0, 0, 524368, 0, 0, 524372, 0, 0, 524373, 0, 0, 524374, 0, 0, 524375, 0, 0, 524376, 0, 0, 524377, 0, 0, 524378, 0, 0, 524379, 0, 0, 524380, 0, 0, 524381, 0, 0, 524382, 0, 0, 524383, 0, 0, 524384, 0, 0, 524409, 0, 0, 524410, 0, 0, 524411, 0, 0, 524412, 0, 0, 524413, 0, 0, 524414, 0, 0, 524415, 0, 0, 524416, 0, 0, 524417, 0, 0, 524418, 0, 0, 524419, 0, 0, 524420, 0, 0, 524421, 0, 0, 524422, 0, 0, 524423, 0, 0, 524424, 0, 0, 524425, 0, 0, 524426, 0, 0, 524427, 0, 0, 524428, 0, 0, 524429, 0, 0, 524430, 0, 0, 524431, 0, 0, 524432, 0, 0, 524433, 0, 0, 524434, 0, 0, 524435, 0, 0, 524436, 0, 0, 524437, 0, 0, 524438, 0, 0, 524439, 0, 0, 524440, 0, 0, 524441, 0, 0, 524442, 0, 0, 524443, 0, 0, 524444, 0, 0, 524445, 0, 0, 524453, 1, 0, 524454, 1, 0, 524455, 1, 0, 524456, 1, 0, 524457, 1, 0, 524458, 1, 0, 524461, 1, 0, 524462, 1, 0, 524463, 1, 0, 524464, 1, 0, 524465, 1, 0, 524468, 1, 0, 524492, 0, 0, 524493, 0, 0, 524494, 0, 0, 524495, 0, 0 )
+
+[node name="TileMap2" type="TileMap" parent="."]
+scale = Vector2( 0.492, 0.492 )
+tile_set = SubResource( 10 )
+cell_size = Vector2( 122, 122 )
+cell_tile_origin = 2
+show_collision = true
+collision_layer = 0
+collision_mask = 4
+format = 1
+tile_data = PoolIntArray( 131188, 4, 0, 131272, 0, 0, 196720, 4, 0, 196808, 4, 0, 196821, 3, 0, 196825, 3, 0, 196826, 3, 0, 262252, 4, 0, 262269, 4, 0, 262277, 4, 0, 262285, 0, 0, 262286, 0, 0, 262287, 0, 0, 262288, 0, 0, 262340, 4, 0, 262357, 3, 0, 262361, 3, 0, 262362, 3, 0, 262363, 3, 0, 327784, 4, 0, 327804, 0, 0, 327805, 0, 0, 327806, 0, 0, 327807, 0, 0, 327812, 0, 0, 327813, 0, 0, 327814, 0, 0, 327815, 0, 0, 327821, 4, 0, 327831, 0, 0, 327872, 4, 0, 327893, 3, 0, 327894, 3, 0, 327896, 3, 0, 327897, 3, 0, 393262, 3, 0, 393306, 0, 0, 393316, 4, 0, 393336, 3, 0, 393364, 3, 0, 393379, 0, 0, 393404, 4, 0, 393414, 3, 0, 393430, 3, 0, 393431, 3, 0, 393432, 3, 0, 458794, 3, 0, 458798, 3, 0, 458828, 0, 0, 458836, 3, 0, 458904, 0, 0, 458912, 4, 0, 458922, 0, 0, 458936, 4, 0, 458967, 3, 0, 458968, 3, 0, 524307, 0, 0, 524316, 2, 0, 524317, 0, 0, 524324, 0, 0, 524325, 0, 0, 524326, 3, 0, 524327, 1, 0, 524328, 1, 0, 524329, 1, 0, 524330, 3, 0, 524331, 1, 0, 524332, 1, 0, 524333, 1, 0, 524334, 3, 0, 524341, 0, 0, 524342, 0, 0, 524350, 3, 0, 524357, 1, 0, 524358, 1, 0, 524359, 1, 0, 524360, 3, 0, 524369, 1, 0, 524370, 1, 0, 524371, 1, 0, 524372, 3, 0, 524385, 1, 0, 524386, 1, 0, 524387, 1, 0, 524388, 1, 0, 524389, 1, 0, 524390, 1, 0, 524391, 1, 0, 524392, 1, 0, 524393, 1, 0, 524394, 1, 0, 524395, 1, 0, 524396, 1, 0, 524397, 1, 0, 524398, 1, 0, 524399, 1, 0, 524400, 1, 0, 524401, 1, 0, 524402, 1, 0, 524403, 1, 0, 524404, 1, 0, 524405, 1, 0, 524406, 1, 0, 524407, 1, 0, 524408, 1, 0, 524446, 1, 0, 524447, 1, 0, 524448, 1, 0, 524449, 1, 0, 524450, 1, 0, 524451, 1, 0, 524452, 1, 0, 524453, 4, 0, 524459, 1, 0, 524460, 1, 0, 524461, 4, 0, 524466, 1, 0, 524467, 1, 0, 524468, 4, 0, 524469, 1, 0, 524470, 1, 0, 524471, 1, 0, 524472, 1, 0, 524473, 1, 0, 524474, 1, 0, 524475, 1, 0, 524476, 1, 0, 524477, 1, 0, 524478, 1, 0, 524479, 1, 0, 524480, 1, 0, 524481, 1, 0, 524482, 1, 0, 524483, 1, 0, 524484, 1, 0, 524485, 1, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Floor" type="TileMap" parent="."]
+scale = Vector2( 0.938, 0.938 )
+tile_set = SubResource( 16 )
+collision_mask = 3
+format = 1
+tile_data = PoolIntArray( 589825, 0, 0, 589829, 0, 0, 589833, 0, 0, 589837, 0, 0, 589841, 0, 0, 589845, 0, 0, 589849, 0, 0, 589853, 0, 0, 589857, 0, 0, 589861, 0, 0, 589865, 0, 0, 589869, 0, 0, 589873, 0, 0, 589877, 0, 0, 589881, 0, 0, 589885, 0, 0, 589889, 0, 0, 589893, 0, 0, 589897, 0, 0, 589901, 0, 0, 589905, 0, 0, 589909, 0, 0, 589913, 0, 0, 589917, 0, 0, 589921, 0, 0, 589925, 0, 0, 589929, 0, 0, 589933, 0, 0, 589937, 0, 0, 589941, 0, 0, 589945, 0, 0, 589949, 0, 0, 589953, 0, 0, 589957, 0, 0, 589961, 0, 0, 589965, 0, 0, 589969, 0, 0, 589973, 0, 0, 589977, 0, 0, 589981, 0, 0, 589985, 0, 0, 589989, 0, 0, 589993, 0, 0, 589997, 0, 0, 590001, 0, 0, 590005, 0, 0, 590009, 0, 0, 590013, 0, 0, 590017, 0, 0, 590021, 0, 0, 590025, 0, 0, 590029, 0, 0, 590033, 0, 0, 590037, 0, 0 )

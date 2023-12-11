@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=37 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Game.gd" type="Script" id=2]
@@ -10,84 +10,19 @@
 [ext_resource path="res://assets/RegularSpike02.png" type="Texture" id=8]
 [ext_resource path="res://assets/ThornPit01.png" type="Texture" id=9]
 [ext_resource path="res://assets/Geometry Dash - Ground/Grounds/groundSquare_01_001-hd.png" type="Texture" id=10]
+[ext_resource path="res://Solid_white.png" type="Texture" id=11]
+[ext_resource path="res://assets/Geometry Dash - Backgrounds/Backgrounds/game_bg_01_001-hd.png" type="Texture" id=12]
+[ext_resource path="res://audio/Sound Effects/explode_11.mp3" type="AudioStream" id=13]
+[ext_resource path="res://audio/1-02. Stereo Madness.mp3" type="AudioStream" id=14]
 
 [sub_resource type="DynamicFont" id=4]
 size = 100
 font_data = ExtResource( 3 )
 
-[sub_resource type="ConvexPolygonShape2D" id=6]
-points = PoolVector2Array( 0, 0, 122, 0, 122, 61, 0, 61 )
+[sub_resource type="Shader" id=25]
 
-[sub_resource type="ConvexPolygonShape2D" id=7]
-points = PoolVector2Array( 0, 0, 122, 0, 122, 28, 0, 28 )
-
-[sub_resource type="ConvexPolygonShape2D" id=8]
-points = PoolVector2Array( 0, 0, 121.789, 0, 122, 6.79658, 0.0133438, 6.95808 )
-
-[sub_resource type="TileSet" id=5]
-0/name = "RegularBlock01.png 0"
-0/texture = ExtResource( 5 )
-0/tex_offset = Vector2( 0, 0 )
-0/modulate = Color( 1, 1, 1, 1 )
-0/region = Rect2( 0, 0, 122, 122 )
-0/tile_mode = 0
-0/occluder_offset = Vector2( 0, 0 )
-0/navigation_offset = Vector2( 0, 0 )
-0/shape_offset = Vector2( 0, 0 )
-0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-0/shape = SubResource( 6 )
-0/shape_one_way = false
-0/shape_one_way_margin = 1.0
-0/shapes = [ {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": SubResource( 6 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
-} ]
-0/z_index = 0
-1/name = "RegularPlatform01.png 1"
-1/texture = ExtResource( 4 )
-1/tex_offset = Vector2( 0, 0 )
-1/modulate = Color( 1, 1, 1, 1 )
-1/region = Rect2( 0, 0, 122, 56 )
-1/tile_mode = 0
-1/occluder_offset = Vector2( 0, 0 )
-1/navigation_offset = Vector2( 0, 0 )
-1/shape_offset = Vector2( 0, 0 )
-1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-1/shape = SubResource( 7 )
-1/shape_one_way = false
-1/shape_one_way_margin = 1.0
-1/shapes = [ {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": SubResource( 7 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
-} ]
-1/z_index = 0
-2/name = "WavyPlatform04.png 2"
-2/texture = ExtResource( 6 )
-2/tex_offset = Vector2( 0, 0 )
-2/modulate = Color( 1, 1, 1, 1 )
-2/region = Rect2( 0, 0, 122, 63 )
-2/tile_mode = 0
-2/occluder_offset = Vector2( 0, 0 )
-2/navigation_offset = Vector2( 0, 0 )
-2/shape_offset = Vector2( 0, 0 )
-2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-2/shape = SubResource( 8 )
-2/shape_one_way = false
-2/shape_one_way_margin = 1.0
-2/shapes = [ {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": SubResource( 8 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
-} ]
-2/z_index = 0
+[sub_resource type="ShaderMaterial" id=26]
+shader = SubResource( 25 )
 
 [sub_resource type="ConvexPolygonShape2D" id=9]
 points = PoolVector2Array( 61, 0, 122, 122, 0, 122 )
@@ -211,6 +146,97 @@ points = PoolVector2Array( 0, 13.8382, 60.9332, 32.2499, 122, 56, 0, 56 )
 } ]
 4/z_index = 0
 
+[sub_resource type="ConvexPolygonShape2D" id=6]
+points = PoolVector2Array( 0, 0, 122, 0, 122, 61, 0, 61 )
+
+[sub_resource type="ConvexPolygonShape2D" id=7]
+points = PoolVector2Array( 0, 0, 122, 0, 122, 28, 0, 28 )
+
+[sub_resource type="ConvexPolygonShape2D" id=8]
+points = PoolVector2Array( 0, 0, 121.789, 0, 122, 6.79658, 0.0133438, 6.95808 )
+
+[sub_resource type="TileSet" id=5]
+0/name = "RegularBlock01.png 0"
+0/texture = ExtResource( 5 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 122, 122 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 6 )
+0/shape_one_way = false
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 6 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+0/z_index = 0
+1/name = "RegularPlatform01.png 1"
+1/texture = ExtResource( 4 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 122, 56 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape = SubResource( 7 )
+1/shape_one_way = false
+1/shape_one_way_margin = 1.0
+1/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 7 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+1/z_index = 0
+2/name = "WavyPlatform04.png 2"
+2/texture = ExtResource( 6 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 0, 0, 122, 63 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape = SubResource( 8 )
+2/shape_one_way = false
+2/shape_one_way_margin = 1.0
+2/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 8 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+2/z_index = 0
+
+[sub_resource type="Shader" id=22]
+code = "shader_type canvas_item;
+
+uniform vec3 color;
+
+void fragment() {
+	vec4 c = texture(TEXTURE, UV);
+	
+	COLOR.rgb = c.r * color;
+	
+}
+"
+
+[sub_resource type="ShaderMaterial" id=21]
+shader = SubResource( 22 )
+shader_param/color = Vector3( 0.149, 0.082, 0.694 )
+
 [sub_resource type="ConvexPolygonShape2D" id=15]
 points = PoolVector2Array( 0, 0, 256, 0, 256, 256, 0, 256 )
 
@@ -237,16 +263,50 @@ points = PoolVector2Array( 0, 0, 256, 0, 256, 256, 0, 256 )
 } ]
 0/z_index = 0
 
+[sub_resource type="Shader" id=27]
+code = "shader_type canvas_item;
+
+uniform vec3 color;
+
+void fragment() {
+	vec4 c = texture(TEXTURE, UV);
+	
+	COLOR.rgb = c.r * color;
+	
+}
+"
+
+[sub_resource type="ShaderMaterial" id=28]
+shader = SubResource( 27 )
+shader_param/color = Vector3( 0.329, 0.196, 0.945 )
+
+[sub_resource type="Environment" id=29]
+background_mode = 4
+glow_enabled = true
+glow_intensity = 8.0
+glow_strength = 0.69
+glow_hdr_threshold = 2.0
+glow_high_quality = true
+
+[sub_resource type="Shader" id=19]
+code = "shader_type canvas_item;
+
+void fragment() {
+	vec4 pixel_color = texture(SCREEN_TEXTURE, SCREEN_UV);
+	
+	if (pixel_color.rgb == vec3(1,1,1)) {
+		pixel_color.rgb = vec3(2,2,2);
+	}
+	
+	COLOR = pixel_color;
+	
+}"
+
+[sub_resource type="ShaderMaterial" id=18]
+shader = SubResource( 19 )
+
 [node name="Game" type="Node2D"]
 script = ExtResource( 2 )
-
-[node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 84, 501 )
-gravity_scale = 1.0
-
-[node name="Camera2D" type="Camera2D" parent="."]
-anchor_mode = 0
-current = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -263,21 +323,8 @@ margin_bottom = 60.0
 custom_fonts/font = SubResource( 4 )
 text = "You Died!"
 
-[node name="Label" type="Label" parent="CanvasLayer"]
-margin_left = 26.0
-margin_top = 450.0
-margin_right = 66.0
-margin_bottom = 464.0
-
-[node name="TileMap" type="TileMap" parent="."]
-scale = Vector2( 0.492, 0.492 )
-tile_set = SubResource( 5 )
-cell_size = Vector2( 122, 122 )
-collision_mask = 3
-format = 1
-tile_data = PoolIntArray( 131188, 1, 0, 196720, 1, 0, 196808, 1, 0, 196821, 0, 0, 196825, 0, 0, 196826, 0, 0, 196830, 0, 0, 262252, 1, 0, 262269, 1, 0, 262270, 1, 0, 262277, 1, 0, 262278, 1, 0, 262340, 1, 0, 262357, 0, 0, 262361, 0, 0, 262362, 0, 0, 262363, 0, 0, 262365, 0, 0, 262366, 0, 0, 327784, 1, 0, 327821, 1, 0, 327822, 1, 0, 327823, 1, 0, 327824, 1, 0, 327872, 1, 0, 327893, 0, 0, 327894, 0, 0, 327896, 0, 0, 327897, 0, 0, 327899, 0, 0, 327901, 0, 0, 393262, 0, 0, 393316, 1, 0, 393336, 0, 0, 393337, 0, 0, 393338, 0, 0, 393339, 0, 0, 393340, 0, 0, 393341, 0, 0, 393342, 0, 0, 393343, 0, 0, 393344, 0, 0, 393345, 0, 0, 393346, 0, 0, 393347, 0, 0, 393348, 0, 0, 393349, 0, 0, 393350, 0, 0, 393351, 0, 0, 393352, 0, 0, 393353, 0, 0, 393364, 0, 0, 393365, 0, 0, 393366, 0, 0, 393367, 0, 0, 393404, 1, 0, 393414, 0, 0, 393415, 0, 0, 393416, 0, 0, 393417, 0, 0, 393418, 0, 0, 393419, 0, 0, 393420, 0, 0, 393421, 0, 0, 393422, 0, 0, 393423, 0, 0, 393430, 0, 0, 393431, 0, 0, 393432, 0, 0, 393435, 0, 0, 393436, 0, 0, 393437, 0, 0, 458794, 0, 0, 458798, 0, 0, 458836, 0, 0, 458837, 0, 0, 458838, 0, 0, 458839, 0, 0, 458840, 0, 0, 458841, 0, 0, 458842, 0, 0, 458843, 0, 0, 458844, 0, 0, 458845, 0, 0, 458846, 0, 0, 458847, 0, 0, 458848, 0, 0, 458873, 0, 0, 458874, 0, 0, 458875, 0, 0, 458876, 0, 0, 458877, 0, 0, 458878, 0, 0, 458879, 0, 0, 458880, 0, 0, 458881, 0, 0, 458882, 0, 0, 458883, 0, 0, 458884, 0, 0, 458885, 0, 0, 458886, 0, 0, 458887, 0, 0, 458888, 0, 0, 458889, 0, 0, 458890, 0, 0, 458891, 0, 0, 458892, 0, 0, 458893, 0, 0, 458894, 0, 0, 458895, 0, 0, 458896, 0, 0, 458897, 0, 0, 458898, 0, 0, 458899, 0, 0, 458900, 0, 0, 458901, 0, 0, 458902, 0, 0, 458903, 0, 0, 458912, 1, 0, 458913, 1, 0, 458914, 1, 0, 458915, 1, 0, 458936, 1, 0, 458956, 0, 0, 458957, 0, 0, 458958, 0, 0, 458959, 0, 0, 458967, 0, 0, 458968, 0, 0, 458972, 0, 0, 458973, 0, 0, 524326, 0, 0, 524330, 0, 0, 524334, 0, 0, 524350, 0, 0, 524351, 0, 0, 524352, 0, 0, 524353, 0, 0, 524354, 0, 0, 524355, 0, 0, 524356, 0, 0, 524360, 0, 0, 524361, 0, 0, 524362, 0, 0, 524363, 0, 0, 524364, 0, 0, 524365, 0, 0, 524366, 0, 0, 524367, 0, 0, 524368, 0, 0, 524372, 0, 0, 524373, 0, 0, 524374, 0, 0, 524375, 0, 0, 524376, 0, 0, 524377, 0, 0, 524378, 0, 0, 524379, 0, 0, 524380, 0, 0, 524381, 0, 0, 524382, 0, 0, 524383, 0, 0, 524384, 0, 0, 524409, 0, 0, 524410, 0, 0, 524411, 0, 0, 524412, 0, 0, 524413, 0, 0, 524414, 0, 0, 524415, 0, 0, 524416, 0, 0, 524417, 0, 0, 524418, 0, 0, 524419, 0, 0, 524420, 0, 0, 524421, 0, 0, 524422, 0, 0, 524423, 0, 0, 524424, 0, 0, 524425, 0, 0, 524426, 0, 0, 524427, 0, 0, 524428, 0, 0, 524429, 0, 0, 524430, 0, 0, 524431, 0, 0, 524432, 0, 0, 524433, 0, 0, 524434, 0, 0, 524435, 0, 0, 524436, 0, 0, 524437, 0, 0, 524438, 0, 0, 524439, 0, 0, 524440, 0, 0, 524441, 0, 0, 524442, 0, 0, 524443, 0, 0, 524444, 0, 0, 524445, 0, 0, 524453, 1, 0, 524454, 1, 0, 524455, 1, 0, 524456, 1, 0, 524457, 1, 0, 524458, 1, 0, 524461, 1, 0, 524462, 1, 0, 524463, 1, 0, 524464, 1, 0, 524465, 1, 0, 524468, 1, 0, 524492, 0, 0, 524493, 0, 0, 524494, 0, 0, 524495, 0, 0 )
-
-[node name="TileMap2" type="TileMap" parent="."]
+[node name="collisions" type="TileMap" parent="."]
+material = SubResource( 26 )
 scale = Vector2( 0.492, 0.492 )
 tile_set = SubResource( 10 )
 cell_size = Vector2( 122, 122 )
@@ -291,9 +338,81 @@ __meta__ = {
 "_edit_lock_": true
 }
 
+[node name="TileMap" type="TileMap" parent="."]
+scale = Vector2( 0.492, 0.492 )
+tile_set = SubResource( 5 )
+cell_size = Vector2( 122, 122 )
+collision_mask = 3
+format = 1
+tile_data = PoolIntArray( 131188, 1, 0, 196720, 1, 0, 196808, 1, 0, 196821, 0, 0, 196825, 0, 0, 196826, 0, 0, 196830, 0, 0, 262252, 1, 0, 262269, 1, 0, 262270, 1, 0, 262277, 1, 0, 262278, 1, 0, 262340, 1, 0, 262357, 0, 0, 262361, 0, 0, 262362, 0, 0, 262363, 0, 0, 262365, 0, 0, 262366, 0, 0, 327726, 0, 0, 327784, 1, 0, 327821, 1, 0, 327822, 1, 0, 327823, 1, 0, 327824, 1, 0, 327872, 1, 0, 327893, 0, 0, 327894, 0, 0, 327896, 0, 0, 327897, 0, 0, 327899, 0, 0, 327901, 0, 0, 393262, 0, 0, 393316, 1, 0, 393336, 0, 0, 393337, 0, 0, 393338, 0, 0, 393339, 0, 0, 393340, 0, 0, 393341, 0, 0, 393342, 0, 0, 393343, 0, 0, 393344, 0, 0, 393345, 0, 0, 393346, 0, 0, 393347, 0, 0, 393348, 0, 0, 393349, 0, 0, 393350, 0, 0, 393351, 0, 0, 393352, 0, 0, 393353, 0, 0, 393364, 0, 0, 393365, 0, 0, 393366, 0, 0, 393367, 0, 0, 393404, 1, 0, 393414, 0, 0, 393415, 0, 0, 393416, 0, 0, 393417, 0, 0, 393418, 0, 0, 393419, 0, 0, 393420, 0, 0, 393421, 0, 0, 393422, 0, 0, 393423, 0, 0, 393430, 0, 0, 393431, 0, 0, 393432, 0, 0, 393435, 0, 0, 393436, 0, 0, 393437, 0, 0, 458794, 0, 0, 458798, 0, 0, 458836, 0, 0, 458837, 0, 0, 458838, 0, 0, 458839, 0, 0, 458840, 0, 0, 458841, 0, 0, 458842, 0, 0, 458843, 0, 0, 458844, 0, 0, 458845, 0, 0, 458846, 0, 0, 458847, 0, 0, 458848, 0, 0, 458873, 0, 0, 458874, 0, 0, 458875, 0, 0, 458876, 0, 0, 458877, 0, 0, 458878, 0, 0, 458879, 0, 0, 458880, 0, 0, 458881, 0, 0, 458882, 0, 0, 458883, 0, 0, 458884, 0, 0, 458885, 0, 0, 458886, 0, 0, 458887, 0, 0, 458888, 0, 0, 458889, 0, 0, 458890, 0, 0, 458891, 0, 0, 458892, 0, 0, 458893, 0, 0, 458894, 0, 0, 458895, 0, 0, 458896, 0, 0, 458897, 0, 0, 458898, 0, 0, 458899, 0, 0, 458900, 0, 0, 458901, 0, 0, 458902, 0, 0, 458903, 0, 0, 458912, 1, 0, 458913, 1, 0, 458914, 1, 0, 458915, 1, 0, 458936, 1, 0, 458956, 0, 0, 458957, 0, 0, 458958, 0, 0, 458959, 0, 0, 458967, 0, 0, 458968, 0, 0, 458972, 0, 0, 458973, 0, 0, 524326, 0, 0, 524330, 0, 0, 524334, 0, 0, 524350, 0, 0, 524351, 0, 0, 524352, 0, 0, 524353, 0, 0, 524354, 0, 0, 524355, 0, 0, 524356, 0, 0, 524360, 0, 0, 524361, 0, 0, 524362, 0, 0, 524363, 0, 0, 524364, 0, 0, 524365, 0, 0, 524366, 0, 0, 524367, 0, 0, 524368, 0, 0, 524372, 0, 0, 524373, 0, 0, 524374, 0, 0, 524375, 0, 0, 524376, 0, 0, 524377, 0, 0, 524378, 0, 0, 524379, 0, 0, 524380, 0, 0, 524381, 0, 0, 524382, 0, 0, 524383, 0, 0, 524384, 0, 0, 524409, 0, 0, 524410, 0, 0, 524411, 0, 0, 524412, 0, 0, 524413, 0, 0, 524414, 0, 0, 524415, 0, 0, 524416, 0, 0, 524417, 0, 0, 524418, 0, 0, 524419, 0, 0, 524420, 0, 0, 524421, 0, 0, 524422, 0, 0, 524423, 0, 0, 524424, 0, 0, 524425, 0, 0, 524426, 0, 0, 524427, 0, 0, 524428, 0, 0, 524429, 0, 0, 524430, 0, 0, 524431, 0, 0, 524432, 0, 0, 524433, 0, 0, 524434, 0, 0, 524435, 0, 0, 524436, 0, 0, 524437, 0, 0, 524438, 0, 0, 524439, 0, 0, 524440, 0, 0, 524441, 0, 0, 524442, 0, 0, 524443, 0, 0, 524444, 0, 0, 524445, 0, 0, 524453, 1, 0, 524454, 1, 0, 524455, 1, 0, 524456, 1, 0, 524457, 1, 0, 524458, 1, 0, 524461, 1, 0, 524462, 1, 0, 524463, 1, 0, 524464, 1, 0, 524465, 1, 0, 524468, 1, 0, 524492, 0, 0, 524493, 0, 0, 524494, 0, 0, 524495, 0, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
 [node name="Floor" type="TileMap" parent="."]
+material = SubResource( 21 )
 scale = Vector2( 0.938, 0.938 )
 tile_set = SubResource( 16 )
 collision_mask = 3
 format = 1
-tile_data = PoolIntArray( 589825, 0, 0, 589829, 0, 0, 589833, 0, 0, 589837, 0, 0, 589841, 0, 0, 589845, 0, 0, 589849, 0, 0, 589853, 0, 0, 589857, 0, 0, 589861, 0, 0, 589865, 0, 0, 589869, 0, 0, 589873, 0, 0, 589877, 0, 0, 589881, 0, 0, 589885, 0, 0, 589889, 0, 0, 589893, 0, 0, 589897, 0, 0, 589901, 0, 0, 589905, 0, 0, 589909, 0, 0, 589913, 0, 0, 589917, 0, 0, 589921, 0, 0, 589925, 0, 0, 589929, 0, 0, 589933, 0, 0, 589937, 0, 0, 589941, 0, 0, 589945, 0, 0, 589949, 0, 0, 589953, 0, 0, 589957, 0, 0, 589961, 0, 0, 589965, 0, 0, 589969, 0, 0, 589973, 0, 0, 589977, 0, 0, 589981, 0, 0, 589985, 0, 0, 589989, 0, 0, 589993, 0, 0, 589997, 0, 0, 590001, 0, 0, 590005, 0, 0, 590009, 0, 0, 590013, 0, 0, 590017, 0, 0, 590021, 0, 0, 590025, 0, 0, 590029, 0, 0, 590033, 0, 0, 590037, 0, 0 )
+tile_data = PoolIntArray( 655349, 0, 0, 655353, 0, 0, 655357, 0, 0, 589825, 0, 0, 589829, 0, 0, 589833, 0, 0, 589837, 0, 0, 589841, 0, 0, 589845, 0, 0, 589849, 0, 0, 589853, 0, 0, 589857, 0, 0, 589861, 0, 0, 589865, 0, 0, 589869, 0, 0, 589873, 0, 0, 589877, 0, 0, 589881, 0, 0, 589885, 0, 0, 589889, 0, 0, 589893, 0, 0, 589897, 0, 0, 589901, 0, 0, 589905, 0, 0, 589909, 0, 0, 589913, 0, 0, 589917, 0, 0, 589921, 0, 0, 589925, 0, 0, 589929, 0, 0, 589933, 0, 0, 589937, 0, 0, 589941, 0, 0, 589945, 0, 0, 589949, 0, 0, 589953, 0, 0, 589957, 0, 0, 589961, 0, 0, 589965, 0, 0, 589969, 0, 0, 589973, 0, 0, 589977, 0, 0, 589981, 0, 0, 589985, 0, 0, 589989, 0, 0, 589993, 0, 0, 589997, 0, 0, 590001, 0, 0, 590005, 0, 0, 590009, 0, 0, 590013, 0, 0, 590017, 0, 0, 590021, 0, 0, 590025, 0, 0, 590029, 0, 0, 590033, 0, 0, 590037, 0, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 84, 510 )
+gravity_scale = 1.0
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.1, 1 )
+motion_mirroring = Vector2( 1024, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+material = SubResource( 28 )
+position = Vector2( 0, -484 )
+texture = ExtResource( 12 )
+centered = false
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 29 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+current = true
+
+[node name="ScreenColor" type="TextureRect" parent="Camera2D"]
+material = SubResource( 18 )
+margin_right = 200.0
+margin_bottom = 200.0
+rect_scale = Vector2( 6, 4 )
+texture = ExtResource( 11 )
+
+[node name="DiedEffect" type="CPUParticles2D" parent="."]
+scale = Vector2( 5, 5 )
+emitting = false
+amount = 100
+one_shot = true
+explosiveness = 0.92
+randomness = 1.0
+lifetime_randomness = 1.0
+emission_shape = 1
+emission_sphere_radius = 1.0
+spread = 180.0
+gravity = Vector2( 0, 0 )
+initial_velocity = 300.0
+initial_velocity_random = 0.5
+scale_amount = 4.0
+scale_amount_random = 1.0
+color = Color( 1, 1, 1, 0.392157 )
+
+[node name="DeathSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 13 )
+volume_db = 10.0
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 14 )
+volume_db = 5.0
+autoplay = true

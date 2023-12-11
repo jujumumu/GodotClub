@@ -39,6 +39,20 @@ collision_mask = 0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Kill"]
 shape = SubResource( 3 )
 
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+position = Vector2( -30, 30 )
+scale = Vector2( 2, 2 )
+lifetime = 0.25
+randomness = 1.0
+lifetime_randomness = 1.0
+direction = Vector2( -1, -0.176 )
+spread = 10.0
+gravity = Vector2( 0, 0 )
+initial_velocity = 200.0
+scale_amount = 3.0
+scale_amount_random = 1.0
+color = Color( 0.541176, 0.933333, 0.0901961, 1 )
+
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_Area2D_body_exited"]
 [connection signal="body_entered" from="Kill" to="." method="_on_Kill_body_entered"]
